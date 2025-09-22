@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:background="@color/gray_light"
+    android:layout_marginBottom="4dp">
+
+    <!-- Text showing the task name -->
+    <TextView
+        android:id="@+id/textViewTask"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Sample Task"
+        android:textSize="16sp"
+        android:textColor="@color/black"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonDelete"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:icon="@drawable/ic_delete"
+        app:iconTint="@color/red"
+        android:backgroundTint="@android:color/transparent"
+        app:iconSize="28dp"
+        android:padding="0dp"
+        android:contentDescription="Delete Task"/>
+
+</LinearLayout>
